@@ -3,7 +3,8 @@ rem Gerar o Objeto para Windows64 a partir do código fonte
 nasm -f win64 hello.asm
 rem Linkeditar e gerar o Executavel a partir do Objeto (binario)
 rem link /subsystem:console /ENTRY:_start /LARGEADDRESSAWARE:NO /out:hello.exe hello.obj
-link /subsystem:console /ENTRY:_start /out:hello.exe hello.obj
+rem link /subsystem:console /out:hello.exe hello.obj
+link hello.obj hello.exe
 rem Observações gerais
 rem O link.exe é uma ferramente a parte do Nasm (mas pode ser instalada conjuntamente)
 rem No visual studio ela geralmente vem associada a ferramenteas de desenvolvimento C/C++ (frameworks)
