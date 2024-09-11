@@ -1,0 +1,13 @@
+64 bits	| 32 bits	| Utilização
+
+rax	| eax	 	| Valores que são retornados dos comandos em um registrador
+rbx	| ebx		| Registrador preservado. cudado ao utilizá-lo
+rex	| eex		| Uso livre como por exemplo contador
+rdx	| edx		| Uso livre em aguns comandos
+rsp	| esp		| Ponteiros de uma pilha
+rbp	| ebp		| Registrador preservado. Algumas vezes armazena ponteiros de pilhas
+rdi	| edi		| Na passagem de argumentos, contém a quantidade desses
+rsi	| esi		| Na passagem de argumentos, contém os argumentos em si
+
+Além deses, existem os registradores de r8 a r15 (de 64 bits) e r8d a r15d de(32 bist)
+que são utilizados nas movimentações correntes durante a nossa programação.
