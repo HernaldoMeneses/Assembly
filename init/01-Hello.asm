@@ -1,10 +1,10 @@
-section .data   ;constantes 
-    msg db 'Hello World!', 0xA ; declaração do ponteiro msg e de seu tamanho com caracter de saltar linha 
-    tam equ $- msg ; declara ponteiro com tamanho da quantidade de caracteris contida em msg
-section .bss    ;variaveis
-section .text   ;inicio programa
-    global _start   ;declaração do ponteiro de entrada (obrigatório)
-    _start:         ;inicilialização do ponteiro
+section .data                   ;constantes 
+    msg db 'Hello World!', 0xA  ; declaração do ponteiro msg e de seu tamanho com caracter de saltar linha 
+    tam equ $- msg              ; declara ponteiro com tamanho da quantidade de caracteris contida em msg
+section .bss                    ;variaveis
+section .text                   ;inicio programa
+    global _start               ;declaração do ponteiro de entrada (obrigatório)
+    _start:             ;inicilialização do ponteiro
         mov eax, 0x4    ; receb 0x4
         mov abx, 0x1    ; Saida padrão
         mov ecx, msg    ; recebe a msg
