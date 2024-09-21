@@ -5,8 +5,8 @@ section .bss                    ;variaveis
 section .text                   ;inicio programa
     global _start               ;declaração do ponteiro de entrada (obrigatório)
     _start:             ;inicilialização do ponteiro
-        mov eax, 0x4    ; receb 0x4
-        mov abx, 0x1    ; Saida padrão
+        mov eax, 0x4    ; receb 0x4  
+        mov ebx, 0x1    ; Saida padrão
         mov ecx, msg    ; recebe a msg
         mov edx, tam    ; recebe o tamanho de msg
         int 0x80        ; Executa
