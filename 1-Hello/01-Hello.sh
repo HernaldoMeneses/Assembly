@@ -6,7 +6,7 @@
 
 #chmod +x 01-Hello.sh
 
-nasm -f elf64 01-Hello.asm      # Compila para binario
-sleep 5                         # espera 5 segundo (estimado para dar tempo de gerar o binario )
-ld -s -o 01-HelloExec 01-Hello.o             # Juntar (linkeditar) com as bibliotecas do sistema operacional (executavel)
-./01-HelloExec                              # Executa o programa
+nasm -f elf64 01-Hello.asm		 # turn to  bin
+sleep 5                   		 # waiting for binary
+ld -s -o 01-HelloExec 01-Hello.o         # linked libriry OS 
+./01-HelloExec                           # Executa o programa
