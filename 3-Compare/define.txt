@@ -1,0 +1,6 @@
+db - define 		1  byte
+dw - define word (char) 2  bytes
+dd - define doble (int) 4  bytes
+dq - define quadriword	8  bytes
+dt - define tenword	10 bytes
+

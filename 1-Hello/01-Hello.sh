@@ -10,3 +10,4 @@ nasm -f elf64 01-Hello.asm		 # turn to  bin
 sleep 5                   		 # waiting for binary
 ld -s -o 01-HelloExec 01-Hello.o         # linked libriry OS 
 ./01-HelloExec                           # Executa o programa
+

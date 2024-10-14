@@ -1,0 +1,129 @@
+;Decimal  Binary        Hexadecimal     C             Assembly         Character        Category        Subcategory I        Subcategory II
+;0       00000000      00              '\0'         db 0             NUL             Control         Null                  -
+;1       00000001      01              '\x01'       db 1             SOH             Control         Start of Heading      -
+;2       00000010      02              '\x02'       db 2             STX             Control         Start of Text         -
+;3       00000011      03              '\x03'       db 3             ETX             Control         End of Text           -
+;4       00000100      04              '\x04'       db 4             EOT             Control         End of Transmission   -
+;5       00000101      05              '\x05'       db 5             ENQ             Control         Enquiry               -
+;6       00000110      06              '\x06'       db 6             ACK             Control         Acknowledgment        -
+;7       00000111      07              '\x07'       db 7             BEL             Control         Bell                  -
+;8       00001000      08              '\b'         db 8             BS              Control         Backspace             -
+;9       00001001      09              '\t'         db 9             TAB             Control         Horizontal Tab        -
+;10      00001010      0A              '\n'         db 10            LF              Control         Line Feed             -
+;11      00001011      0B              '\v'         db 11            VT              Control         Vertical Tab          -
+;12      00001100      0C              '\f'         db 12            FF              Control         Form Feed             -
+;13      00001101      0D              '\r'         db 13            CR              Control         Carriage Return       -
+;14      00001110      0E              '\x0E'       db 14            SO              Control         Shift Out             -
+;15      00001111      0F              '\x0F'       db 15            SI              Control         Shift In              -
+;16      00010000      10              '\x10'       db 16            DLE             Control         Data Link Escape      -
+;17      00010001      11              '\x11'       db 17            DC1             Control         Device Control 1      -
+;18      00010010      12              '\x12'       db 18            DC2             Control         Device Control 2      -
+;19      00010011      13              '\x13'       db 19            DC3             Control         Device Control 3      -
+;20      00010100      14              '\x14'       db 20            DC4             Control         Device Control 4      -
+;21      00010101      15              '\x15'       db 21            NAK             Control         Negative Acknowledgment -
+;22      00010110      16              '\x16'       db 22            SYN             Control         Synchronous Idle     -
+;23      00010111      17              '\x17'       db 23            ETB             Control         End of Transmission Block -
+;24      00011000      18              '\x18'       db 24            CAN             Control         Cancel                -
+;25      00011001      19              '\x19'       db 25            EM              Control         End of Medium         -
+;26      00011010      1A              '\x1A'       db 26            SUB             Control         Substitute            -
+;27      00011011      1B              '\x1B'       db 27            ESC             Control         Escape                -
+;28      00011100      1C              '\x1C'       db 28            FS              Control         File Separator        -
+;29      00011101      1D              '\x1D'       db 29            GS              Control         Group Separator       -
+;30      00011110      1E              '\x1E'       db 30            RS              Control         Record Separator      -
+;31      00011111      1F              '\x1F'       db 31            US              Control         Unit Separator        -
+;32      00100000      20              ' '           db 32            SPACE           Printable        Whitespace            -
+;33      00100001      21              '!'           db 33            EXCLAMATION     Printable        Punctuation           -
+;34      00100010      22              '"'           db 34            QUOTE          Printable        Punctuation           -
+;35      00100011      23              '#'           db 35            NUMBER          Printable        Punctuation           -
+;36      00100100      24              '$'           db 36            DOLLAR          Printable        Punctuation           -
+;37      00100101      25              '%'           db 37            PERCENT         Printable        Punctuation           -
+;38      00100110      26              '&'           db 38            AMPERSAND       Printable        Punctuation           -
+;39      00100111      27              '\''          db 39            APOSTROPHE      Printable        Punctuation           -
+;40      00101000      28              '('           db 40            LEFT PARENTHESIS Printable       Punctuation           -
+;41      00101001      29              ')'           db 41            RIGHT PARENTHESIS Printable      Punctuation           -
+;42      00101010      2A              '*'           db 42            ASTERISK        Printable        Punctuation           -
+;43      00101011      2B              '+'           db 43            PLUS            Printable        Punctuation           -
+;44      00101100      2C              ','           db 44            COMMA           Printable        Punctuation           -
+;45      00101101      2D              '-'           db 45            MINUS           Printable        Punctuation           -
+;46      00101110      2E              '.'           db 46            PERIOD          Printable        Punctuation           -
+;47      00101111      2F              '/'           db 47            SLASH           Printable        Punctuation           -
+;48      00110000      30              '0'           db 48            ZERO            Printable        Digit                 -
+;49      00110001      31              '1'           db 49            ONE             Printable        Digit                 -
+;50      00110010      32              '2'           db 50            TWO             Printable        Digit                 -
+;51      00110011      33              '3'           db 51            THREE           Printable        Digit                 -
+;52      00110100      34              '4'           db 52            FOUR            Printable        Digit                 -
+;53      00110101      35              '5'           db 53            FIVE            Printable        Digit                 -
+;54      00110110      36              '6'           db 54            SIX             Printable        Digit                 -
+;55      00110111      37              '7'           db 55            SEVEN           Printable        Digit                 -
+;56      00111000      38              '8'           db 56            EIGHT           Printable        Digit                 -
+;57      00111001      39              '9'           db 57            NINE            Printable        Digit                 -
+;58      00111010      3A              ':'           db 58            COLON           Printable        Punctuation           -
+;59      00111011      3B              ';'           db 59            SEMICOLON       Printable        Punctuation           -
+;60      00111100      3C              '<'           db 60            LESS THAN       Printable        Punctuation           -
+;61      00111101      3D              '='           db 61            EQUALS          Printable        Punctuation           -
+;62      00111110      3E              '>'           db 62            GREATER THAN    Printable        Punctuation           -
+;63      00111111      3F              '?'           db 63            QUESTION        Printable        Punctuation           -
+;64      01000000      40              '@'           db 64            AT              Printable        Punctuation           -
+;65      01000001      41              'A'           db 65            A               Printable        Uppercase Letter      -
+;66      01000010      42              'B'           db 66            B               Printable        Uppercase Letter      -
+;67      01000011      43              'C'           db 67            C               Printable        Uppercase Letter      -
+;68      01000100      44              'D'           db 68            D               Printable        Uppercase Letter      -
+;69      01000101      45              'E'           db 69            E               Printable        Uppercase Letter      -
+;70      01000110      46              'F'           db 70            F               Printable        Uppercase Letter      -
+;71      01000111      47              'G'           db 71            G               Printable        Uppercase Letter      -
+;72      01001000      48              'H'           db 72            H               Printable        Uppercase Letter      -
+;73      01001001      49              'I'           db 73            I               Printable        Uppercase Letter      -
+;74      01001010      4A              'J'           db 74            J               Printable        Uppercase Letter      -
+;75      01001011      4B              'K'           db 75            K               Printable        Uppercase Letter      -
+;76      01001100      4C              'L'           db 76            L               Printable        Uppercase Letter      -
+;77      01001101      4D              'M'           db 77            M               Printable        Uppercase Letter      -
+;78      01001110      4E              'N'           db 78            N               Printable        Uppercase Letter      -
+;79      01001111      4F              'O'           db 79            O               Printable        Uppercase Letter      -
+;80      01010000      50              'P'           db 80            P               Printable        Uppercase Letter      -
+;81      01010001      51              'Q'           db 81            Q               Printable        Uppercase Letter      -
+;82      01010010      52              'R'           db 82            R               Printable        Uppercase Letter      -
+;83      01010011      53              'S'           db 83            S               Printable        Uppercase Letter      -
+;84      01010100      54              'T'           db 84            T               Printable        Uppercase Letter      -
+;85      01010101      55              'U'           db 85            U               Printable        Uppercase Letter      -
+;86      01010110      56              'V'           db 86            V               Printable        Uppercase Letter      -
+;87      01010111      57              'W'           db 87            W               Printable        Uppercase Letter      -
+;88      01011000      58              'X'           db 88            X               Printable        Uppercase Letter      -
+;89      01011001      59              'Y'           db 89            Y               Printable        Uppercase Letter      -
+;90      01011010      5A              'Z'           db 90            Z               Printable        Uppercase Letter      -
+;91      01011011      5B              '['           db 91            LEFT BRACKET    Printable        Punctuation           -
+;92      01011100      5C              '\\'          db 92            BACKSLASH       Printable        Punctuation           -
+;93      01011101      5D              ']'           db 93            RIGHT BRACKET   Printable        Punctuation           -
+;94      01011110      5E              '^'           db 94            CARET           Printable        Punctuation           -
+;95      01011111      5F              '_'           db 95            UNDERSCORE      Printable        Punctuation           -
+;96      01100000      60              '`'           db 96            GRAVE ACCENT    Printable        Punctuation           -
+;97      01100001      61              'a'           db 97            a               Printable        Lowercase Letter      -
+;98      01100010      62              'b'           db 98            b               Printable        Lowercase Letter      -
+;99      01100011      63              'c'           db 99            c               Printable        Lowercase Letter      -
+;100     01100100      64              'd'           db 100           d               Printable        Lowercase Letter      -
+;101     01100101      65              'e'           db 101           e               Printable        Lowercase Letter      -
+;102     01100110      66              'f'           db 102           f               Printable        Lowercase Letter      -
+;103     01100111      67              'g'           db 103           g               Printable        Lowercase Letter      -
+;104     01101000      68              'h'           db 104           h               Printable        Lowercase Letter      -
+;105     01101001      69              'i'           db 105           i               Printable        Lowercase Letter      -
+;106     01101010      6A              'j'           db 106           j               Printable        Lowercase Letter      -
+;107     01101011      6B              'k'           db 107           k               Printable        Lowercase Letter      -
+;108     01101100      6C              'l'           db 108           l               Printable        Lowercase Letter      -
+;109     01101101      6D              'm'           db 109           m               Printable        Lowercase Letter      -
+;110     01101110      6E              'n'           db 110           n               Printable        Lowercase Letter      -
+;111     01101111      6F              'o'           db 111           o               Printable        Lowercase Letter      -
+;112     01110000      70              'p'           db 112           p               Printable        Lowercase Letter      -
+;113     01110001      71              'q'           db 113           q               Printable        Lowercase Letter      -
+;114     01110010      72              'r'           db 114           r               Printable        Lowercase Letter      -
+;115     01110011      73              's'           db 115           s               Printable        Lowercase Letter      -
+;116     01110100      74              't'           db 116           t               Printable        Lowercase Letter      -
+;117     01110101      75              'u'           db 117           u               Printable        Lowercase Letter      -
+;118     01110110      76              'v'           db 118           v               Printable        Lowercase Letter      -
+;119     01110111      77              'w'           db 119           w               Printable        Lowercase Letter      -
+;120     01111000      78              'x'           db 120           x               Printable        Lowercase Letter      -
+;121     01111001      79              'y'           db 121           y               Printable        Lowercase Letter      -
+;122     01111010      7A              'z'           db 122           z               Printable        Lowercase Letter      -
+;123     01111011      7B              '{'           db 123           LEFT BRACE      Printable        Punctuation           -
+;124     01111100      7C              '|'           db 124           VERTICAL BAR    Printable        Punctuation           -
+;125     01111101      7D              '}'           db 125           RIGHT BRACE     Printable        Punctuation           -
+;126     01111110      7E              '~'           db 126           TILDE           Printable        Punctuation           -
+;127     01111111      7F              '\x7F'       db 127           DEL             Control         Delete                -
