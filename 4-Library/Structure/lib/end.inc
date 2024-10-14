@@ -1,4 +1,4 @@
 section .end
-    mov EAX, SYS_EXIT
-    xor EBX, EBX
-    int SYS_CALL
+    mov RAX, 60
+    xor RDI, RDI
+    syscall

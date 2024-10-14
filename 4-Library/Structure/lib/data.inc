@@ -1,5 +1,5 @@
 section .data
-  x dd 50
+  x dd 05
   y dd 10
   msg1 db 'X maior que Y', LF, NULL
   tam1 equ $ - msg1
